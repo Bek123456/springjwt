@@ -15,15 +15,11 @@ import java.time.LocalDateTime;
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class CategoryDTO {
-
     private Integer id;
-
     private String orderNumber;
-
     private String nameUz;
-    
     private String nameEng;
-
     private String nameRu;
     private LocalDateTime updateDate;
+    private LocalDateTime createDate;
 }

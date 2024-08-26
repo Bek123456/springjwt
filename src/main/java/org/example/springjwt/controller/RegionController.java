@@ -46,7 +46,8 @@ public class RegionController {
     }
 
     @GetMapping("/getByList")
-    public ResponseEntity<PageImpl<RegionDTO>>getByList(Integer size, Integer page){
+    public ResponseEntity<PageImpl<RegionDTO>>getByList(@RequestParam(value = "page", defaultValue = "1") Integer page,
+                                                        @RequestParam(value = "size", defaultValue = "2") Integer size){
         return ResponseEntity.ok(regionService.getByList(size,page));
     }
 

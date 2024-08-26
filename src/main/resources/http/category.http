@@ -1,0 +1,31 @@
+###
+POST http://localhost:8080/category/created
+Content-Type: application/json
+
+{
+  "orderNumber": "1",
+  "nameUz": "uu",
+  "nameEng": "ee",
+  "nameRu": "rr"
+}
+
+###
+PUT http://localhost:8080/category/edit/1
+Content-Type: application/json
+
+{
+  "orderNumber": "2",
+  "nameUz": "UU1",
+  "nameEng": "EE1",
+  "nameRu": "RR1"
+}
+
+###
+DELETE http://localhost:8080/category/deleted/5
+
+###
+GET http://localhost:8080/category/getByList?size=3&page=1
+
+#####
+GET http://localhost:8080/category/getByLang?language=uz
+Accept-Language: uz
