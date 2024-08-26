@@ -1,0 +1,41 @@
+###
+POST http://localhost:8080/articleType/created
+Content-Type: application/json
+
+{
+  "orderNumber": "ali",
+  "nameUz": "uu",
+  "nameEng": "ee",
+  "nameRu": "rr"
+}
+####
+PUT http://localhost:8080/articleType/update/2
+Content-Type: application/json
+
+{
+  "nameUz": "oz",
+  "nameEng": "eng",
+  "nameRu": "ru"
+}
+
+###
+DELETE http://localhost:8080/articleType/deleted/2
+
+###
+GET http://localhost:8080/articleType/getByList?size=2&page=1
+
+
+
+
+###
+GET http://localhost:8080/articleType/getByLang?language=uz
+Accept-Language: uz
+
+
+
+
+
+
+
+
+
