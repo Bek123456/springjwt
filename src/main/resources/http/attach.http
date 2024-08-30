@@ -1,0 +1,30 @@
+
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="1-surat"
+
+< D:\programer\programer rasm\1-surat.jpg
+
+
+###
+GET http://localhost:8080/attach/open/68c45ab3-bb9b-46db-8501-ada2c8496550
+
+###
+GET http://localhost:8080/attach/openGeneral/68c45ab3-bb9b-46db-8501-ada2c8496550.jpg
+
+###
+GET http://localhost:8080/attach/download/68c45ab3-bb9b-46db-8501-ada2c8496550.jpg
+
+#####
+GET http://localhost:8080/attach/ali/68c45ab3-bb9b-46db-8501-ada2c8496550.jpg
+
+###
+DELETE http://localhost:8080/attach/deleted/68c45ab3-bb9b-46db-8501-ada2c8496550
+
+
+
+
+
+

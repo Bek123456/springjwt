@@ -17,7 +17,7 @@ public class AttachEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private String id;
     private String originalName;
     private String path;
     private Long size;

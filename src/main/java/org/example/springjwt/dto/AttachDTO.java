@@ -11,7 +11,7 @@ import java.util.UUID;
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class AttachDTO {
-    private UUID id;
+    private String id;
     private String originalName;
     private String path;
     private Long size;
