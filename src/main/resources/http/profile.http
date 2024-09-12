@@ -1,0 +1,45 @@
+###
+POST http://localhost:8080/profile/created
+Content-Type: application/json
+
+{
+  "name": "ali",
+  "surname": "ali",
+  "phone": "11",
+  "password": "1231",
+  "role": "ROLE_USER",
+  "photoId": "b5789876-6eba-4b75-bf45-a72fb1442bbf"
+}
+
+
+###
+PUT http://localhost:8080/profile/edit/1
+Content-Type: application/json
+
+{
+  "name": "vali",
+  "surname": "vali",
+  "phone": "+99893",
+  "password": "19988",
+  "status": "NOT_ACTIVE"
+}
+
+###
+GET http://localhost:8080/profile/pagination?page=1&size=2
+
+###
+DELETE http://localhost:8080/profile/deleted/1
+
+###
+PUT http://localhost:8080/profile/updatePhoto?photoId=5177da14-18fa-43c2-b9c7-9a7c63e138f2&id=4
+Content-Type: application/x-www-form-urlencoded
+
+###
+GET http://localhost:8080/profile/filter?page=1&size=5
+Content-Type: application/json
+
+{
+      "name": "ali"
+}
+
+
